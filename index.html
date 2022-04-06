@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+
+        <section id="home">
+
+            <nav class="topnav" id="navbar">
+
+                <img src="images/DL_free-file (1).png" class="logo-img" onclick="window.location.href='index.html'">
+
+                <ul class="navbar-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+                <div class="icon nav-icon-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+
+            <div class="home-hero">
+                <h3> ----- HELLO THERE</h3>
+                <h1>I am Danijel Lakic</h1>
+                <h1>Web & software developer from <br> Stockholm, Sweden.</h1>
+            </div>
+
+            <a href="#about">
+                <div class="scroll-hero">
+                    <p>scroll down <span style="color:#7510F7">⇓</span> </p>
+                </div>
+            </a>
+
+        </section>
+
+
+
+        <section id="about">
+
+            <div class="main-about">
+
+                <h1 class="about-sec-title">ABOUT ME</h1>
+
+                <div calss="second-about">
+
+                    <h3 class="text-section">I'm passionate, problem solving who likes to do things that makes evereday more fun! I don't like to define myself by the work I've done. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer
+                        to keep learning, continue challenging myself, and do interesting things that matter. I'm seeking out for the new opportunities to develop and create great things that can make an inpact in others lifes. </h3>
+
+                    <h2 class="skills-about-title">My skills</h2>
+
+                    <div class="skills-about">
+
+                        <img src="images/html-5.png" class="skills-logo">
+                        <img src="images/css-3.png" class="skills-logo">
+                        <img src="images/js.png" class="skills-logo">
+                        <img src="images/react.png" class="skills-logo">
+                        <img src="images/database.png" class="skills-logo">
+                        <img src="images/git.png" class="skills-logo">
+                        <img src="images/github (1).png" class="skills-logo">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="projects">
+
+            <h1 class="projects-sec-title">PROJECTS</h1>
+
+            <div class="projects-grid">
+
+                <div class="grid-image pic-1"></div>
+                <h2>La Casa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores tempora officia distinctio nesciunt ullam aspernatur ab at consequatur alias del
+                </p>
+                <a href="">READ MORE</a>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="grid-image pic-2"></div>
+                <h2>Rock-Paper-Scissors</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores tempora officia distinctio nesciunt ullam aspernatur ab at consequatur alias del
+                </p>
+                <a href="https://github.com/daniiellakic/Rock-Paper-Scissors-Game.git">READ MORE</a>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="grid-image pic-3"></div>
+                <h2>Weather App</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores tempora officia distinctio nesciunt ullam aspernatur ab at consequatur alias delext
+                </p>
+                <a href="">READ MORE</a>
+
+            </div>
+
+            <div class="more-project">
+                <p>More projects you can find on my Github page!</p>
+            </div>
+
+
+
+        </section>
+
+
+
+        <section id="contact">
+
+            <h1 class="contact-sec-title">CONTACT</h1>
+
+            <div class="contact-main">
+
+                <div class="social">
+
+                    <div class="resume" onclick="resumeSida()">Resume</div>
+
+                    <div class="linkedin" onClick="location.href='https://www.linkedin.com/in/danijel-lakic-9133b8143/'">Linkedin</div>
+
+                    <div class="github" onClick="location.href='https://github.com/daniiellakic'">Github</div>
+
+                </div>
+
+                <div class="column__form">
+                    <h3>Hit me upp!</h3>
+
+                    <label for="fname">Your Name</label>
+                    <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+
+                    <label for="lname">Enter your e-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+                    <label for="phone">Enter your phone number</label>
+                    <input type="text" id="phone" name="phone" placeholder="070-0000000" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" required></textarea>
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="footer">
+            <p>danijellakic @ all right reservet </p>
+        </section>
+
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/360298eba1.js" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
