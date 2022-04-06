@@ -1,5 +1,5 @@
 # Portfolio
-My  portfolio website in.
+My  portfolio website.
 
 Check it: https://danijellakic.netlify.app/
 
