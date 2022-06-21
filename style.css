@@ -62,14 +62,6 @@ html {
     transition: 0.6s;
 }
 
-.cards{
-    color: #fff;
-    font-size: 1.5rem;
-    width: auto;
-    margin-left: 10em;
-    object-fit: cover;
-}
-
 
 /*HOME*/
 
@@ -105,7 +97,7 @@ html {
 
 .scroll-hero :hover {
     cursor: pointer;
-    color: #7415e9;
+    color: rgb(196, 196, 196);
 }
 
 
@@ -241,7 +233,6 @@ html {
 }
 
 .projects-grid a {
-    text-decoration: none;
     background-color: #1d2026;
     color: #f2f2f2;
     padding: 15px 20px;
@@ -251,21 +242,22 @@ html {
 }
 
 .projects-grid a:hover {
-    background-color: #5f06ca;
     transform: scale(1.08);
     transition: all 0.5s ease;
+    background-color: #6e10e0;
 }
 
 .pic-1 {
-    background-image: url('./images/LACASA\ IMAGE.PNG');
+    background-image: url('./images/Screenshot\ 2022-06-21\ at\ 14.20.59.png');
 }
 
 .pic-2 {
-    background-image: url('./images/game-picature.png');
+    background-image: url('./images/163743920-391f62c7-1eb8-4ee1-9b07-b9f384b688d7.png');
 }
 
 .pic-3 {
-    background-image: url('./images/pexels-pixabay-270404.jpg');
+    background-image: url('./images/Screenshot\ 2022-06-21\ at\ 14.37.56.png');
+    object-fit: cover;
 }
 
 .projects-grid .columns {
@@ -414,9 +406,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #5f06ca;
-    transform: scale(1.08);
-    transition: all 0.8s ease;
+    background-color: #6e10e0;
 }
 
 label {

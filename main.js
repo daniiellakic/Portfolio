@@ -3,7 +3,7 @@ window.onscroll = function() { myFunction() };
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-/* Function to stick the nav bar */
+/////////////////////////////Function to stick the nav bar /////////////////////////////
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
@@ -12,18 +12,13 @@ function myFunction() {
     }
 }
 
-
-
-
-//Toggle menu
-
+/////////////////////////////Toggle menu/////////////////////////////
 const icon = document.getElementsByClassName('icon')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
 icon.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
 });
-
 
 
 const icons = document.querySelectorAll('.icon');
@@ -33,5 +28,12 @@ icons.forEach(icon => {
     });
 });
 
-//Get the video
+
+
+/////////////////////////////Get the video/////////////////////////////
 var video = document.getElementById("myVideo");
+
+//open resumeSida
+function resumeSida() {
+    window.open("../images/Danijel_Lakic_Resume new.pdf");
+}
