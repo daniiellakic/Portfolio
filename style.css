@@ -492,7 +492,7 @@ label {
     .home-hero {
         position: absolute;
         font-size: 1.8rem;
-        top: 50%;
+        top: 62%;
         left: 52%;
         transform: translate(-50%, -50%);
         max-width: 90rem;
@@ -534,6 +534,7 @@ label {
     .social {
         margin-top: 1em;
         gap: 5px;
+        font-size: 1rem;
     }
     .toggle {
         position: relative;
@@ -638,6 +639,7 @@ label {
         width: 100%;
         padding: 20px;
         margin-left: 15px;
+        padding: 10px;
     }
 }
 
