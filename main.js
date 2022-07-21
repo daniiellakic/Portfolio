@@ -1,7 +1,19 @@
-window.onscroll = function() { myFunction() };
+//Navigation toogle
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var toggle = document.querySelector('.toggle');
+var navigation = document.querySelector('.navigation');
+
+toggle.addEventListener('click', function() {
+    toggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+});
+
+
+function closeNav() {
+    navigation.classList.remove('active');
+    toggle.classList.remove('active');
+}
+
 
 /////////////////////////////Function to stick the nav bar /////////////////////////////
 function myFunction() {
@@ -29,11 +41,12 @@ icons.forEach(icon => {
 });
 
 
-
-/////////////////////////////Get the video/////////////////////////////
-var video = document.getElementById("myVideo");
-
 //open resumeSida
 function resumeSida() {
-    window.open("../images/Danijel_Lakic_Resume new.pdf");
+    window.open("../images/Danijel_Lakic_Resume.eng.pdf");
+}
+
+
+function openContact() {
+    window.location.href = "#contact";
 }

@@ -10,52 +10,35 @@
 
     <body>
 
-        <section id="home">
 
-            <nav class="topnav" id="navbar">
+        <header>
 
-                <img src="images/DL_free-file (1).png" class="logo-img" onclick="window.location.href='index.html'">
-
-                <ul class="navbar-links">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-
-                <div class="icon nav-icon-1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-            </nav>
-
-            <video autoplay muted loop class="myVideo">
-                <source src="../video/video.mp4" type="video/mp4">
-              </video>
-
-            <div class="home-hero">
-                <h3> ----- HELLO THERE</h3>
-                <h1>I am Danijel Lakic</h1>
-                <h1>Software developer from <br> Stockholm, Sweden.</h1>
+            <div class="logo">
+                <p>DL</p>
             </div>
 
-            <a href="#about">
-                <div class="scroll-hero">
-                    <p>scroll down <span style="color:#7510F7">⇓</span> </p>
-                </div>
-            </a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a onclick="closeNav()" href="#home">HOME</a></li>
+                <li><a onclick="closeNav()" href="#about">ABOUT</a></li>
+                <li><a onclick="closeNav()" href="#projects">PROJECTS</a></li>
+                <li><a onclick="closeNav()" href="#contact">CONTACT</a></li>
+            </ul>
+
+        </header>
+
+        <section id="home">
+
+            <div class="home-hero">
+                <h3>HELLO THERE 👋 I'M</h3>
+                <h1>Danijel Lakic.</h1>
+                <h1>Software developer.</h1>
+                <p class="underText">I’m passionate, problem solving who likes to do things that makes every day more fun! I’m seeking out for the new opportunities to develop and create great things that can make an impact in others’ lives 👨‍💻
+                </p>
+                <button onclick="openContact()">Contact me</button>
+            </div>
 
         </section>
-
-
 
         <section id="about">
 
@@ -65,27 +48,26 @@
 
                 <div calss="second-about">
 
-                    <h3 class="text-section">I'm passionate, problem solving who likes to do things that makes evereday more fun! I don't like to define myself by the work I've done. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer
-                        to keep learning, continue challenging myself, and do interesting things that matter. I'm seeking out for the new opportunities to develop and create great things that can make an inpact in others lifes. </h3>
+                    <h3 class="text-section">I'm passionate, problem solving who likes to do things that makes evereday more fun! From the day I wrote my first line of code I knew I was hooked. My passion for programming lead me to master problem solving, ability to learn quickly
+                        and always to stay on the top of the new technologies. Developer with over 3 years of experience in developing as from university education as well as onside private projects 💻</h3>
 
-                    <h2 class="skills-about-title">My skills</h2>
+                    <h2 class="skills-about-title">My preferred weapons of choise 👇</h2>
 
                     <div class="skills-about">
 
-                        <img src="images/html-5.png" class="skills-logo">
-                        <img src="images/css-3.png" class="skills-logo">
-                        <img src="images/js.png" class="skills-logo">
-                        <img src="images/react.png" class="skills-logo">
-                        <img src="images/database.png" class="skills-logo">
-                        <img src="images/git.png" class="skills-logo">
-                        <img src="images/github (1).png" class="skills-logo">
+                        <img src="images/html-5.png " class="skills-logo ">
+                        <img src="images/css-3.png " class="skills-logo ">
+                        <img src="images/js.png " class="skills-logo ">
+                        <img src="images/react.png " class="skills-logo ">
+                        <img src="images/database.png " class="skills-logo ">
+                        <img src="images/git.png " class="skills-logo ">
+                        <img src="images/github (1).png " class="skills-logo ">
 
                     </div>
                 </div>
             </div>
 
         </section>
-
 
         <section id="projects">
 
@@ -104,26 +86,24 @@
             <div class="projects-grid">
 
                 <div class="grid-image pic-2"></div>
-                <h2>Rock-Paper-Scissors</h2>
-                <p>A simultaneous, zero-sum game, it has three possible outcomes: a draw, a win or a loss. Game is simple made in HTML and CSS. Functionality is made in JAVASCRIPT.
+                <h2>Password Generator</h2>
+                <p>Create a secure password using generator tool. Help prevent a security threat by getting a strong password. Generator functionality is made in JavaScript with HTML and CSS.
                 </p>
-                <a href="https://github.com/daniiellakic/Rock-Paper-Scissors-Game.git">READ MORE</a>
+                <a href="https://password-genr.netlify.app/">READ MORE</a>
 
             </div>
 
             <div class="projects-grid">
 
                 <div class="grid-image pic-3"></div>
-                <h2>Calculator</h2>
-                <p> On-screen calculator using JavaScript, HTML, and CSS made from Odin Project. Calculator contains functions for all of the basic math operators typically find on simple calculators.
+                <h2>Metric Unit Conversion</h2>
+                <p> Conversion Calculator to convert between commonly used units like meeters to fetts, liters to gallons and kilograms to pounds using JavaScript for functionality and HTML and CSS to make it look nice.
                 </p>
-                <a href="https://daniiellakic.github.io/Calculator-Assignement/">READ MORE</a>
+                <a href="https://metric-unit-conversion.netlify.app/">READ MORE</a>
 
             </div>
 
         </section>
-
-
 
         <section id="contact">
 
@@ -141,22 +121,24 @@
 
                 </div>
 
-                <div class="column__form">
+                <form action="https://formsubmit.co/danijellakic@yahoo.com" method="POST">
+                    <div class="column__form">
 
-                    <label for="fname">Your Name</label>
-                    <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+                        <label for="fname">Your Name</label>
+                        <input type="text" id="name" name="firstname" placeholder="Your name.." required>
 
-                    <label for="lname">Enter your e-mail</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                        <label for="lname">Enter your e-mail</label>
+                        <input type="text" id="email" name="email" placeholder="Your email." required>
 
-                    <label for="phone">Enter your phone number</label>
-                    <input type="text" id="phone" name="phone" placeholder="070-0000000" required>
+                        <label for="phone">Enter your phone number</label>
+                        <input type="text" id="phone" name="phone" placeholder="070-0000000" required>
 
-                    <label for="message">Message</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" required></textarea>
-                    <input type="submit" value="Send">
-                    </form>
+                        <label for="message">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" required></textarea>
+                        <input type="submit" value="Send">
+                </form>
                 </div>
+                </form>
 
             </div>
 
