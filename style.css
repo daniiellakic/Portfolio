@@ -54,7 +54,7 @@
      min-height: 90vh;
      justify-content: center;
      text-align: center;
-     padding: 60px;
+     padding: 120px;
      color: gainsboro;
  }
  
@@ -497,7 +497,7 @@
      .home-hero {
          position: absolute;
          font-size: 1.8rem;
-         top: 62%;
+         top: 70%;
          left: 52%;
          transform: translate(-50%, -50%);
          max-width: 90rem;
@@ -543,6 +543,7 @@
          height: 100%;
          flex: 100%;
          margin: 5px;
+         background-size: cover;
      }
      #projects {
          background: rgb(13, 22, 41);
@@ -695,6 +696,7 @@
              height: 100%;
              flex: 100%;
              margin-left: 55%;
+             background-size: cover;
          }
          #projects {
              height: 100rem;
