@@ -492,14 +492,14 @@
          overflow-x: hidden;
      }
      #home {
-         min-height: 100vh;
+         min-height: 110vh;
      }
      .home-hero {
          position: absolute;
          font-size: 1.8rem;
          top: 70%;
          left: 52%;
-         transform: translate(-50%, -50%);
+         transform: translate(-50%, -40%);
          max-width: 90rem;
          width: 80%;
      }
