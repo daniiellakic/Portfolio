@@ -585,7 +585,7 @@
      }
 
      .row {
-         grid-template-columns: repeat(4, 1fr);
+         grid-template-columns: repeat(2, 0.5fr);
      }
 
      .column {
@@ -593,12 +593,14 @@
          border: 1px solid rgb(13, 22, 41);
          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
          border-radius: 12px;
-         margin-left: 5px;
-         margin-right: 5px;
+         margin-left: 15px;
+         margin-right: 15px;
      }
 
      .skills-logo {
-         margin-left: -8px;
+         margin-right: 5px; 
+         margin-left: 5px;
+         border-radius: 12px;
      }
 
      #image-about {
