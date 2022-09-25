@@ -3,8 +3,13 @@
      padding: 0;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      scroll-behavior: smooth;
+     background: rgb(13, 22, 41);
  }
- 
+ section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+ }
  header {
      background: rgb(13, 22, 41);
      position: absolute;
@@ -16,22 +21,24 @@
      justify-content: space-between;
      align-items: center;
  }
- 
+
  .logo {
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-size: 1.5em;
      color: gainsboro;
      margin-left: 30px;
+     z-index: 9999;
  }
- 
+
  .navigation {
      display: flex;
+     z-index: 9999;
  }
- 
+
  .navigation li {
      list-style: none;
  }
- 
+
  .navigation li a {
      position: relative;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,14 +48,15 @@
      text-decoration: none;
      transition: 0, 25s;
  }
- 
+
  .navigation li a:hover {
      color: #00a1ff;
      transform: scale(1.05);
      transition: all 1s ease;
  }
+
  /*HOME*/
- 
+
  #home {
      background: rgb(13, 22, 41);
      min-height: 90vh;
@@ -57,14 +65,14 @@
      padding: 110px 0px;
      color: gainsboro;
  }
- 
+
  .home-hero {
      display: block;
      margin-left: auto;
      margin-right: auto;
      font-size: 2rem;
  }
- 
+
  .home-hero h1 {
      font-weight: bolder;
      background-size: 100%;
@@ -75,7 +83,7 @@
      -moz-background-clip: text;
      -moz-text-fill-color: transparent;
  }
- 
+
  .home-hero h3 {
      color: gainsboro;
      margin-bottom: 50px;
@@ -85,7 +93,7 @@
      font-size: 2.5vh;
      letter-spacing: 3px;
  }
- 
+
  .home-hero .underText {
      color: gainsboro;
      font-size: 3.2vh;
@@ -99,7 +107,7 @@
      margin-top: 10px;
      line-height: 35px;
  }
- 
+
  button {
      width: 20%;
      background: #00a1ff;
@@ -115,26 +123,27 @@
      transition: all 0.3s;
      margin-top: 40px;
  }
- 
+
  button:hover {
      transform: scale(1.05);
      transition: all 1s ease;
  }
+
  /*ABOUT*/
- 
+
  #about {
      background: rgb(13, 22, 41);
      display: block;
      justify-content: center;
      margin: 0;
  }
- 
+
  .main-about {
      background: rgb(13, 22, 41);
      width: 100%;
      position: relative;
  }
- 
+
  .container-about {
      display: flex;
      flex-wrap: wrap;
@@ -142,7 +151,7 @@
      margin-right: 250px;
      gap: 40px;
  }
- 
+
  .text-section {
      flex: 50%;
      line-height: 40px;
@@ -151,15 +160,15 @@
      font-size: 3vh;
      font-weight: lighter;
  }
- 
+
  #image-about {
-     flex: 50%;
+     display: flex;
      width: 350px;
      height: 350px;
      border-radius: 1px;
      border-radius: 10px;
  }
- 
+
  .about-sec-title {
      font-size: 2rem;
      color: gainsboro;
@@ -170,38 +179,51 @@
      margin-bottom: 50px;
      position: relative;
  }
- 
- .column {
-     float: left;
-     width: 12.50%;
- }
+
  /* Clear floats after image containers */
- 
- .row::after {
-     content: "";
-     clear: both;
-     display: table;
+
+ .row {
+     display: grid;
+     grid-template-columns: repeat(4, 0.2fr);
+     grid-template-rows: 0.2fr;
+     grid-column-gap: 5px;
+     grid-row-gap: 0px;
+     justify-content: center;
  }
- 
+
+ .column {
+     background-color: rgb(7, 16, 31);
+     border: 1px solid rgb(13, 22, 41);
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     border-radius: 12px;
+     margin: 10px;
+ }
+
+ .column :hover {
+     cursor: pointer;
+ }
+
  .skills-about-title {
      color: gainsboro;
      padding: 9rem 0rem;
      display: block;
      letter-spacing: 1px;
      text-align: center;
-     margin-bottom: -130px;
+     margin-bottom: -100px;
      margin-top: 0px;
      margin-left: 25px;
  }
- 
+
  .skills-logo {
      height: 70px;
-     width: auto;
      object-fit: cover;
      padding: 25%;
+     margin-left: 30px;
+     background-color: rgb(7, 16, 31);
  }
+
  /*PROJECTS*/
- 
+
  #projects {
      background: rgb(13, 22, 41);
      justify-content: center;
@@ -210,7 +232,7 @@
      padding: 10rem 0;
      flex-wrap: wrap;
  }
- 
+
  .projects-sec-title {
      color: gainsboro;
      display: block;
@@ -225,7 +247,7 @@
      position: relative;
      display: block;
  }
- 
+
  .projects-grid {
      width: 330px;
      height: 460px;
@@ -234,28 +256,30 @@
      background: white;
      border-radius: 15px;
  }
- 
+
  .projects-grid:hover {
      cursor: pointer;
      transform: scale(1.03);
      transition: all 1s ease;
  }
- 
+
  .grid-image {
      height: 170px;
      margin-bottom: 15px;
      background-size: cover;
      border-radius: 15px 15px 0 0;
  }
- 
+
  .projects-grid h2 {
      padding: 10px;
+     background: #f2f2f2;
  }
- 
+
  .projects-grid p {
      padding: 10px;
+     background: #f2f2f2;
  }
- 
+
  .projects-grid a {
      background-color: #00a1ff;
      color: #f2f2f2;
@@ -266,25 +290,25 @@
      text-align: center;
      margin: 20px 50px;
  }
- 
+
  .projects-grid a:hover {
      transform: scale(1.08);
      transition: all 0.5s ease;
  }
- 
+
  .pic-1 {
-     background-image: url('./images/Screenshot\ 2022-06-21\ at\ 14.20.59.png');
+     background-image: url('./images/Tracker.png');
  }
- 
+
  .pic-2 {
      background-image: url('./images/Screenshot\ 2022-07-17\ at\ 22.23.03.png');
  }
- 
+
  .pic-3 {
      background-image: url('./images/Screenshot\ 2022-07-17\ at\ 22.31.21.png');
      object-fit: cover;
  }
- 
+
  .projects-grid .columns {
      padding: 50px;
      display: grid;
@@ -295,23 +319,24 @@
      transition: 0.5s;
      border-radius: 10%;
  }
- 
+
  .projects-grid .columns:hover {
      background: #dadada;
  }
- 
+
  .projects-grid .columns p {
      margin-bottom: -3rem;
  }
+
  /*CONTACT*/
- 
+
  #contact {
      background: rgb(13, 22, 41);
      display: block;
      text-align: center;
      height: 60rem;
  }
- 
+
  .contact-sec-title {
      color: gainsboro;
      background: rgb(13, 22, 41);
@@ -324,14 +349,14 @@
      margin-top: -10rem;
      position: relative;
  }
- 
+
  .contact-main {
      border-radius: 20px;
      height: 45rem;
      padding: 5rem 0;
      background: rgb(13, 22, 41);
  }
- 
+
  .contact-main h2 {
      color: #fff;
      text-align: center;
@@ -341,7 +366,7 @@
      transform: translate(0px, 0px);
      font-weight: bold;
  }
- 
+
  .contact-main h3 {
      color: #fff;
      line-height: 170%;
@@ -351,14 +376,14 @@
      opacity: 1;
      transform: translate(0px, 0px);
  }
- 
+
  .contact-main p {
      color: #fff;
      line-height: 170%;
      text-align: center;
      padding-top: 10em;
  }
- 
+
  .social {
      color: #fff;
      font-size: 1.3rem;
@@ -372,40 +397,40 @@
      margin-left: auto;
      gap: 50px;
  }
- 
+
  .resume {
      border: 2px solid #00c9fb;
      border-radius: 20px;
      padding: 10px 20px;
  }
- 
+
  .linkedin {
      border: 2px solid #00c9fb;
      border-radius: 20px;
      padding: 10px 20px;
  }
- 
+
  .github {
      border: 2px solid #00c9fb;
      border-radius: 20px;
      padding: 10px 20px;
  }
- 
+
  .linkedin:hover {
      cursor: pointer;
      transition: 0.6s;
  }
- 
+
  .github:hover {
      cursor: pointer;
      transition: 0.6s;
  }
- 
+
  .resume:hover {
      cursor: pointer;
      transition: 0.6s;
  }
- 
+
  input[type=text],
  select,
  textarea {
@@ -417,8 +442,9 @@
      resize: vertical;
      border: 2px solid #00c9fb;
      border-radius: 20px;
+     background: #f2f2f2;
  }
- 
+
  input[type=submit] {
      width: 20%;
      background: #00a1ff;
@@ -434,25 +460,27 @@
      transition: all 0.3s;
      margin-top: 25px;
  }
- 
+
  input[type=submit]:hover {
      transform: scale(1.05);
      transition: all 1s ease;
  }
- 
+
  label {
      color: #f2f2f2;
      font-weight: bold;
  }
+
  /* Style the container/contact section */
- 
+
  .container {
      border-radius: 5px;
      background-color: #f2f2f2;
      padding: 10px;
  }
+
  /* Create two columns that float next to eachother */
- 
+
  .column__form {
      float: left;
      width: 50%;
@@ -464,24 +492,34 @@
      margin-right: -50%;
      transform: translate(-50%, -50%);
  }
- /* Clear floats after the columns */
- 
- .row:after {
-     content: "";
-     display: table;
-     clear: both;
- }
+
+
  /*FOOTER*/
- 
+
  #footer {
      background: rgb(13, 22, 41);
      text-align: center;
      padding: 20px;
      color: #fff;
  }
+
+ .hidden {
+   opacity: 1;
+   filter: blur(5px);
+   transform: translateX(-100%);
+   transition: all 1s;
+ }
+
+ .show {
+   opacity: 1;
+   filter:blur(0);
+   transform: translateX(0);
+ }
+
  /*RESPONIVE*/
- 
+
  @media (max-width:991px) {
+
      html,
      body {
          width: 100%;
@@ -489,39 +527,46 @@
          padding: 0;
          overflow-x: hidden;
      }
+
      #home {
-         min-height: 110vh;
+         min-height: 100vh;
      }
+
      .home-hero {
          position: absolute;
          font-size: 1.8rem;
-         top: 70%;
+         top: 50%;
          left: 52%;
          transform: translate(-50%, -50%);
          max-width: 90rem;
          width: 80%;
      }
+
      .home-hero h3 {
          margin-left: auto;
          margin-right: auto;
          align-items: center;
          display: block;
      }
+
      .home-hero .underText {
          font-size: 2.5vh;
          line-height: 28px;
          width: 100%;
          padding-right: 10px;
      }
+
      button {
          width: 100%;
      }
+
      .skills-about-title {
          text-align: center;
          padding: 5rem 2rem;
          margin-left: 3px;
          margin-bottom: 5px;
      }
+
      .container-about {
          display: flex;
          margin-left: auto;
@@ -531,40 +576,64 @@
          padding-left: 15px;
          padding-right: 10px;
      }
+
      .text-section {
          font-size: 2.5vh;
          line-height: 30px;
          font-weight: lighter;
          margin: 15px;
      }
-     #image-about {
-         height: 100%;
-         flex: 100%;
-         margin: 5px;
-         background-size: cover;
+
+     .row {
+         grid-template-columns: repeat(4, 1fr);
      }
+
+     .column {
+         background-color: rgb(7, 16, 31);
+         border: 1px solid rgb(13, 22, 41);
+         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+         border-radius: 12px;
+         margin-left: 5px;
+         margin-right: 5px;
+     }
+
+     .skills-logo {
+         margin-left: -8px;
+     }
+
+     #image-about {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
      #projects {
          background: rgb(13, 22, 41);
          height: 110rem;
          margin-top: 0em;
      }
+
      .projects-sec-title {
          margin-top: 2rem;
      }
+
      .projects-grid {
          margin-top: 3rem;
          height: 30rem;
          grid-template-columns: repeat(auto-fill, minmax(55%, 1fr));
          grid-template-rows: minmax(auto, auto);
      }
+
      .contact-sec-title {
          margin-top: 0rem;
      }
+
      .social {
          margin-top: 1em;
          gap: 5px;
          font-size: 1rem;
      }
+
      .toggle {
          position: relative;
          width: 30px;
@@ -577,6 +646,7 @@
          cursor: pointer;
          z-index: 1000;
      }
+
      .toggle::before {
          content: '';
          position: absolute;
@@ -587,10 +657,12 @@
          transition: 0.25s;
          box-shadow: 0 10px 0 #fff;
      }
+
      .toggle.active::before {
          transform: translateY(0) rotate(45deg);
          box-shadow: 0 0 0 #fff;
      }
+
      .toggle::after {
          content: '';
          position: absolute;
@@ -600,19 +672,23 @@
          transform: translateY(10px);
          transition: 0.25s;
      }
+
      .toggle.active {
          background: rgb(13, 22, 41);
          position: fixed;
          top: 30px;
          right: 30px;
      }
+
      .toggle.active::after {
          transform: translateY(0) rotate(-45deg);
          box-shadow: 0 0 0 #fff;
      }
+
      .navigation {
          display: none;
      }
+
      .navigation.active {
          position: fixed;
          top: 0;
@@ -626,6 +702,7 @@
          z-index: 999;
          background: rgb(13, 22, 41);
      }
+
      .navigation li a {
          font-size: 2em;
          line-height: 2.5em;
@@ -633,29 +710,31 @@
          pad: 0;
          display: inline-block;
      }
+
      .navigation li a:hover {
          background: #00a1ff;
      }
+
      .logo {
          height: 30px;
          margin-left: 30px;
      }
+
      .more-project p {
          align-items: center;
          justify-content: center;
          text-align: center;
      }
+
      .contact-main {
          height: 45rem;
          padding: 10rem 0;
      }
+
      .about-sec-title {
          margin-left: 0rem;
      }
-     .column {
-         float: left;
-         width: 22.50%;
-     }
+
      .skills-icons {
          width: 75px;
          height: 295px;
@@ -663,61 +742,69 @@
          top: 5px;
          margin-right: 10px;
      }
+
      input[type=submit] {
          width: 100%;
          padding: 20px;
          margin-left: 15px;
          padding: 10px;
      }
+
      .column__form {
          left: 49%;
      }
+
      /*tablet*/
      @media screen and (min-width: 768px) and (max-width: 1024px) {
          .home-hero {
              left: 50%;
          }
+
          .scroll-hero {
              left: 52%;
          }
+
          .container-about {
              padding-left: 35px;
              padding-right: 10px;
          }
+
          .text-section {
              font-size: 2.5vh;
              line-height: 35px;
              font-weight: lighter;
              margin: 50px;
          }
-         #image-about {
-             height: 100%;
-             flex: 100%;
-             margin-left: 55%;
-             background-size: cover;
-         }
+         .skills-logo {
+            margin-left: 12px;
+        }   
+
          #projects {
              height: 100rem;
              margin-top: 0em;
          }
+
          projects-grid {
              width: 330px;
              height: 760px;
              margin: 30px;
              margin-top: 0rem;
          }
+
          .skills-about {
              display: flex;
              grid-column-gap: 0px;
              padding: 1rem 35%;
              margin-right: 60px;
              margin-left: 50px;
-             transform: translate( 2%, 20%);
+             transform: translate(2%, 20%);
          }
+
          .about-sec-title {
              margin-left: auto;
              margin-right: auto;
          }
+
          .social {
              margin-top: 0;
          }
