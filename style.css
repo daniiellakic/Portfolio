@@ -295,19 +295,23 @@
      transform: scale(1.08);
      transition: all 0.5s ease;
  }
-
+ 
  .pic-1 {
      background-image: url('./images/Tracker.png');
  }
 
  .pic-2 {
-     background-image: url('./images/Screenshot\ 2022-07-17\ at\ 22.23.03.png');
+     background-image: url('./images/notes.png');
  }
 
  .pic-3 {
-     background-image: url('./images/Screenshot\ 2022-07-17\ at\ 22.31.21.png');
+     background-image: url('./images/meme.png');
      object-fit: cover;
  }
+ 
+ .pic-4 {
+    background-image: url('./images/Screenshot\ 2022-07-17\ at\ 22.23.03.png');
+}
 
  .projects-grid .columns {
      padding: 50px;
@@ -611,7 +615,7 @@
 
      #projects {
          background: rgb(13, 22, 41);
-         height: 110rem;
+         height: 140rem;
          margin-top: 0em;
      }
 
@@ -757,6 +761,7 @@
      }
 
      /*tablet*/
+
      @media screen and (min-width: 768px) and (max-width: 1024px) {
          .home-hero {
              left: 50%;
@@ -811,4 +816,5 @@
              margin-top: 0;
          }
      }
+    
  }
