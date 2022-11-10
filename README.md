@@ -1,5 +1,5 @@
 # Portfolio 
 
-# UNDER CONSTRUCTION #  
+# ALAWAYS UNDER CONSTRUCTION :) #  
 
-My first portfolio inm HTML, CSS, JavaScript
+Portfolio developed with HTML, CSS, JavaScript
