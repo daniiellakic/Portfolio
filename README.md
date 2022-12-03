@@ -1,5 +1,5 @@
 # Portfolio 
 
-# ALAWAYS UNDER CONSTRUCTION :) #  
+# ALWAYS UNDER CONSTRUCTION :) #  
 
 Portfolio developed with HTML, CSS, JavaScript
